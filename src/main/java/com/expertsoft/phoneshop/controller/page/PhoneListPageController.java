@@ -2,6 +2,7 @@ package com.expertsoft.phoneshop.controller.page;
 
 import com.expertsoft.phoneshop.persistence.model.Phone;
 import com.expertsoft.phoneshop.search.SearchParameter;
+import com.expertsoft.phoneshop.service.DefaultPhoneService;
 import com.expertsoft.phoneshop.service.PhoneService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
