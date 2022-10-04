@@ -6,6 +6,7 @@
 <common:page pageTitle="Phone list" showMenu="true">
     <div class="row justify-content-center font-italic mb-3">
         <form method="get">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <input id="query" name="query" type="text" placeholder="Search..." class="search-box" value="${searchParameter.query}">
             <input id="fromPrice" name="fromPrice" type="text" placeholder="" class="search-box" value="${searchParameter.fromPrice}">
             <input id="toPrice" name="toPrice" type="text" placeholder="" class="search-box" value="${searchParameter.toPrice}">

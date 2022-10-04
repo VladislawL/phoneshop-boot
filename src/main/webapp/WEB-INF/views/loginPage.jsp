@@ -9,7 +9,8 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <form>
+                    <form method="post">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                         <div class="form-group row">
                             <label for="username" class="col-sm-3 col-form-label">
                                 Username:
@@ -30,7 +31,7 @@
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                         <div class="row justify-content-center">
-                            Login via GitHub >>
+                            <a href="/oauth2/authorization/github">Login via GitHub >></a>
                         </div>
                     </form>
                 </div>
