@@ -1,6 +1,6 @@
 package com.expertsoft.phoneshop.service;
 
-import com.expertsoft.phoneshop.persistence.model.GithubUser;
+import com.expertsoft.phoneshop.security.oauth2.GithubUser;
 import com.expertsoft.phoneshop.persistence.model.User;
 
 import java.util.List;

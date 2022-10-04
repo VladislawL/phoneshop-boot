@@ -1,11 +1,10 @@
 package com.expertsoft.phoneshop.service;
 
 import com.expertsoft.phoneshop.exception.GithubUserIdNotFound;
-import com.expertsoft.phoneshop.persistence.model.GithubUser;
+import com.expertsoft.phoneshop.security.oauth2.GithubUser;
 import com.expertsoft.phoneshop.persistence.model.User;
 import com.expertsoft.phoneshop.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -12,7 +12,7 @@
             <input id="toPrice" name="toPrice" type="text" placeholder="" class="search-box" value="${searchParameter.toPrice}">
             <button type="submit" class="btn">Search</button>
         </form>
-        Found <c:out value="${phones.totalElements}"/> results!
+        Found <c:out value="${paginationData.page.totalElements}"/> results!
     </div>
     <table class="table table-striped">
         <thead>
@@ -24,12 +24,12 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="phone" items="${phones.content}">
+        <c:forEach var="phone" items="${paginationData.page.content}">
             <phone:tile phone="${phone}"/>
         </c:forEach>
         </tbody>
     </table>
     <util:pagination searchParameter="${searchParameter}"
-                    page="${phones}"
-                    numberOfPages="${numberOfPages}"/>
+                    page="${paginationData.page}"
+                    numberOfPages="${paginationData.numberOfPages}"/>
 </common:page>

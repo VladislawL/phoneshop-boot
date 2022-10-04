@@ -1,6 +1,6 @@
 package com.expertsoft.phoneshop.service;
 
-import com.expertsoft.phoneshop.persistence.model.GithubUser;
+import com.expertsoft.phoneshop.security.oauth2.GithubUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
